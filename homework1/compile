@@ -1,0 +1,7 @@
+#! /bin/bash
+
+# getting executable file
+gcc -Iinclude -Isrc/forExec/include -Isrc/forFork/include -Isrc/forSystem/include src/forExec/forExec.c src/forFork/forFork.c src/forSystem/forSystem.c src/main.c -o output/main
+
+./output/main
+
