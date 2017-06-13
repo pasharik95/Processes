@@ -6,5 +6,9 @@ int main(void)
     createProcessFork();
     createProcessExec();
 
-    return 0;
+    setsid();
+    daemon(1, 1);
+
+    while(1);
+    return getpid();
 }

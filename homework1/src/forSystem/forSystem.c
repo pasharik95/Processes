@@ -2,5 +2,6 @@
 
 void createProcessSystem()
 {
-     printf("Create Process by System\n");
+     printf("Create Process by System (ls -l)\n");
+     system("ls -l");
 }
